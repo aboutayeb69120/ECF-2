@@ -15,40 +15,27 @@
 
  </head>
  <body>
-  <header>
-    <div id="head-top">
-      
-
-
-    </div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div>
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a href="./index.php" class="nav-link"><i class="fas fa-home"></i> Accueil</a>
+                    <a href="./index.php" class="nav-link"><i class="fas fa-home"></i> Accueil</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="./myevents.php">Mes événements</a>
+                  <a class="nav-link" href="./myevents.php"><i class="fas fa-calendar-days"></i> Mes événements</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="./event.php">Ajouter un événement</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  <a class="nav-link" href="./event.php"><i class="fas fa-calendar-plus"></i> Ajouter un événement</a>
                 </li>
             </ul>
-            <a href="./logout.php" class="btn btn-primary logout padding">Se déconnecter</a>
-            
-          </div>
-      
-          </div>
+            <a href="./logout.php" class="btn btn-primary logout p">Se déconnecter</a>
         </div>
-    </nav>
+    </div>
+</nav>
       <div class="bouton-container d-flex justify-content-center" >
         <a href="./signup.php" class="btn btn-primary btn-lg">Créer un compte</a>
         <a href="./login" class="btn btn-primary btn-lg">Se connecter</a>

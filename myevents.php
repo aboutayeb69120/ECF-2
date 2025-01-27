@@ -31,8 +31,8 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes Événements</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
 </head>
 <body>
 
@@ -47,16 +47,16 @@ try {
                     <a href="./index.php" class="nav-link"><i class="fas fa-home"></i> Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./myevents.php">Mes événements</a>
+                  <a class="nav-link" href="./myevents.php"><i class="fas fa-calendar-days"></i> Mes événements</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./event.php">Ajouter un événement</a>
+                  <a class="nav-link" href="./event.php"><i class="fas fa-calendar-plus"></i> Ajouter un événement</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                 </li>
             </ul>
-            <a href="./logout.php" class="btn btn-primary logout">Se déconnecter</a>
+            <a href="./logout.php" class="btn btn-primary logout p">Se déconnecter</a>
         </div>
     </div>
 </nav>
@@ -64,7 +64,7 @@ try {
 <section class="event">
     <?php if(isset($_SESSION['id_participant'])){
     while ($event2 = $stmt->fetch(PDO::FETCH_ASSOC)): ?>
-        <div class="card" style="width: 18rem; margin-bottom: 15px;">
+        <div class="card" >
             <div class="card-body">
                 <h5 class="card-title"><?= htmlspecialchars($event2['event_name']); ?></h5>
                 <p class="card-text">Date : <?= htmlspecialchars($event2['event_date']); ?></p>
@@ -77,6 +77,11 @@ try {
     <?php endwhile; 
     }?>
 </section>
+
+
+
+
+
    
 
 

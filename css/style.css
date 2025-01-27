@@ -33,6 +33,7 @@ body{
     background: url("../img/bg.jpg") center/cover no-repeat;
     height: 100vh;
     margin: 0;
+
 }
 
 
@@ -64,21 +65,25 @@ body{
 }
 
 .event {
+	margin: 10px auto;
 	display: flex;
 	flex-direction: row;
 	gap: 20px;
+	width: 50%;
 }
 
 .card{
 	flex: 1 1 calc(33.333% - 20px);
+	width: 18rem; 
+	margin-bottom: 15px;
+	
 }
 
 .logout{
 	size: 80%;
-	position: absolute;
 	top: 0;
 	left: 1400px;
-	margin: 20px;
+	margin: 40px;
 	border-radius: 20px;
 }
 
