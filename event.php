@@ -64,9 +64,7 @@ session_start();
               </li>
                     
           </ul>
-            <form method="post">
-              <button type="submit" name="Se déconnecter" class="logout">Se déconnecter</button>
-            </form>
+          <a href="./logout.php" class="btn btn-primary logout">Se déconnecter</a>
       
           </div>
         </div>

@@ -42,9 +42,7 @@
                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                 </li>
             </ul>
-            <form method="post">
-              <button type="submit" name="Se déconnecter" class="logout">Se déconnecter</button>
-            </form>
+            <a href="./logout.php" class="btn btn-primary logout padding">Se déconnecter</a>
             
           </div>
       

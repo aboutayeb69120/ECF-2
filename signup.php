@@ -20,7 +20,7 @@
         $chek->execute();
 
         if($chek->rowCount() > 0){
-            echo "email existe déjà!";
+            echo "bienvenue!";
             exit();
         }else{
             $passwordH = password_hash($password, PASSWORD_BCRYPT);
@@ -81,11 +81,9 @@
               <a class="nav-link disabled" aria-disabled="true">Disabled</a>
               </li>
         
-          </ul>
-            <form method="post">
-              <button type="submit" name="Se déconnecter" class="logout">Se déconnecter</button>    
-            </form>
-      
+          
+            </ul>
+            <a href="./logout.php" class="btn btn-primary logout padding">Se déconnecter</a>
           </div>
         </div>
     </nav>
